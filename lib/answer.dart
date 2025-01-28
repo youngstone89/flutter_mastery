@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:core';
+
+import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
   final VoidCallback selectHandler;
@@ -10,8 +11,7 @@ class Answer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      child: RaisedButton(
-        color: Colors.blue,
+      child: ElevatedButton(
         child: Text(answerText),
         onPressed: selectHandler,
       ),
